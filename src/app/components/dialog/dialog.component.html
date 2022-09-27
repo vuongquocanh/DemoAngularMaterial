@@ -1,0 +1,33 @@
+<h1 mat-dialog-title>Add Hero Form</h1>
+<div mat-dialog-content>
+  <form [formGroup]="heroForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Hero Name</mat-label>
+      <input formControlName="heroName" matInput placeholder="Name" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Cinametic Universe</mat-label>
+      <mat-select formControlName="universe" placeholder="Universe">
+        <mat-option value="Marvel">Marvel</mat-option>
+        <mat-option value="DC">DC</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <label for=""><h3>Gender</h3></label>
+    <mat-radio-group formControlName="gender">
+      <mat-radio-button *ngFor="let g of gender" [value]="g">
+        {{ g }}
+      </mat-radio-button>
+    </mat-radio-group>
+  </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button
+    style="margin-left: 8px"
+    mat-raised-button
+    color="primary"
+    (click)="addHero()"
+  >
+    {{actionBtn}}
+  </button>
+</div>

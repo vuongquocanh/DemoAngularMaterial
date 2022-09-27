@@ -1,0 +1,44 @@
+{
+  "heroList": [
+    {
+      "heroName": "Batman",
+      "universe": "DC",
+      "gd": "Male",
+      "id": 2
+    },
+    {
+      "heroName": "Black Window",
+      "universe": "Marvel",
+      "gd": "Female",
+      "id": 3
+    },
+    {
+      "heroName": "Spider Man",
+      "universe": "Marvel",
+      "gd": "Male",
+      "id": 4
+    },
+    {
+      "heroName": "Superman",
+      "universe": "DC",
+      "gd": "Male",
+      "id": 5
+    },
+    {
+      "heroName": "Scarlet Witch",
+      "universe": "Marvel",
+      "gd": "Female",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
